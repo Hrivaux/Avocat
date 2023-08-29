@@ -1,0 +1,168 @@
+/* Définition des polices de caractères */
+@font-face {
+    font-family: 'AGaramondPro-Bold';
+    src: url('../fonts/AGaramondPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AGaramondPro-BoldItalic';
+    src: url('../fonts/AGaramondPro-BoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AGaramondPro-Italic';
+    src: url('../fonts/AGaramondPro-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AGaramondPro-Regular';
+    src: url('../fonts/AGaramondPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orpheus';
+    src: url('../fonts/orpheus.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Styles communs */
+body {
+    font-family: 'AGaramondPro-Regular', serif;
+    margin: 0;
+    padding: 0;
+    min-height: 92vh; /* Remplacer min-height: 800px; pour que l'image de fond prenne toute la page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url("../images/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.left-menu ul,
+.right-menu ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+
+.left-menu ul li,
+.right-menu ul li {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.2s; /* Ajout de la transition pour l'effet de grossissement */
+}
+
+.left-menu ul li {
+    margin-right: 15px;
+}
+
+.right-menu ul li {
+    margin-left: 15px;
+}
+
+/* Styles pour l'effet de grossissement au survol */
+.left-menu ul li:hover,
+.right-menu ul li:hover {
+    transform: scale(1.01);
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.front-text {
+    position: fixed;
+    top: 30%;
+    right: 20%;
+    width: auto;
+    height: auto;
+    float: right;
+}
+
+.blanc {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 39.286%;
+}
+
+.orange {
+    color: #EB9939;
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52.381%;
+    margin-top: 30px;
+}
+
+p {
+
+    text-align: left;
+}
+
+/* Styles pour le responsive */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .left-menu,
+    .right-menu {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .left-menu ul li,
+    .right-menu ul li {
+        margin: 0;
+    }
+
+    .logo {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+.mainContact {
+    background: #FFF;
+}

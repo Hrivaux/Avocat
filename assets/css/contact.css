@@ -1,0 +1,282 @@
+/* Définition des polices de caractères */
+@font-face {
+    font-family: 'AGaramondPro-Bold';
+    src: url('../fonts/AGaramondPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AGaramondPro-BoldItalic';
+    src: url('../fonts/AGaramondPro-BoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AGaramondPro-Italic';
+    src: url('../fonts/AGaramondPro-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AGaramondPro-Regular';
+    src: url('../fonts/AGaramondPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orpheus';
+    src: url('../fonts/orpheus.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 70px 0px rgba(30, 40, 52, 0.08);
+    padding: 10px 20px;
+}
+
+.left-item {
+    width: 58px;
+    height: 47px;
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 283px;
+    height: 117px;
+    flex-shrink: 0;
+    background: url('../images/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right-item {
+    width: 46px;
+    height: 38.469px;
+    flex-shrink: 0;
+}
+
+.mainContact {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 20px 40px; /* Réduit le padding pour un espacement moins important */
+    margin-top: 20px;
+}
+
+.left-side {
+    width: 50%;
+    flex: 1;
+    padding: 20px;
+    height: auto;
+}
+
+.contact-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.contact-title {
+    width: 436px;
+    height: 81px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Orpheus;
+    font-size: 60px;
+    font-style: normal;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.orange-line {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    width: 44%;
+}
+
+.contact-description {
+    display: flex;
+    width: 721px;
+    height: 149px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: AGaramondPro-Regular;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56.5px; /* 217.308% */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    color: #000;
+    font-family: AGaramondPro-Regular;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56.5px; /* 217.308% */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-side {
+    width: 50%;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px; /* Réduit le padding pour un espacement moins important */
+    border-radius: 24px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
+    background-color: #F5F5F5;
+    height: auto;
+    font-family: AGaramondPro-Regular;
+}
+
+
+.right-text {
+    color: #000;
+    font-family: Cormorant Garamond;
+    font-size: 32px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.custom-button {
+    border-radius: 24px;
+    border: 4px solid #EB9939;
+    background: #FFF;
+    color: #EB9939;
+    font-family: Cormorant Garamond;
+    font-style: normal;
+    line-height: normal;
+    padding: 10px 20px;
+    width: 195px;
+    height: 79px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    font-size: 32px; /* Réduit la taille de police */
+}
+
+.custom-button:hover {
+    background: #EB9939;
+    color: #FFF;
+    transform: scale(1.02); /* Légèrement agrandi au survol */
+}
+
+.custom-button.button-active {
+    background: #EB9939;
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.custom-button.button-active:hover {
+    background: #FFF;
+    color: #EB9939;
+}
+
+.form-container {
+    margin-bottom: 40px;
+}
+
+.form-title {
+    color: #EB9939;
+    font-family: Adobe Garamond Pro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.custom-input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 32px;
+    margin-top: 12px;
+    color: #EB9939;
+    outline: none;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.right-side svg {
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.right-side svg:hover,
+.right-side svg:focus {
+    opacity: 1;
+}
+
+.custom-input::placeholder {
+    color: #EB9939;
+    font-size: 32px;
+}
+
+.custom-input:focus {
+    opacity: 1;
+}
+
+.custom-textarea {
+    height: 150px;
+}
+
+.form-container svg {
+    margin-bottom: 40px;
+}
+
+.send-button {
+    width: 328px;
+    height: 84px;
+    flex-shrink: 0;
+    background: #EB9939;
+    border-radius: 24px;
+    font-family: Adobe Garamond Pro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.send-button svg {
+    width: 29px;
+    height: 30px;
+    flex-shrink: 0;
+    stroke-width: 2px;
+    stroke: #FFF;
+    margin-right: 10px;
+}
